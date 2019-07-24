@@ -78,7 +78,7 @@ section a{
 
 @media (min-width: 520px){
     #hamburguer {
-        display: none;
+        display: none; 
     }
 
    
