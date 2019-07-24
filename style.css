@@ -1,4 +1,4 @@
-*{
+body{
     margin: 0;
 }
 
@@ -26,7 +26,7 @@ nav div span{
     background-color: limegreen;
     border-radius: 10px;
     transition: 0.3s;
-} 
+}
 
 section{
     width: 100%;
@@ -37,7 +37,7 @@ section{
     justify-content: center;
     padding-left: 30px;
     transform: translateX(-105%);
-    transition: 0.2s;
+    transition: 1s;
 }
 
 section a{
@@ -48,13 +48,9 @@ section a{
     font-weight: bolder;
 }
 
-}
-
 .aparecerMenu{
     transform: translateX(0) rotate(360deg);
     background-color: blue;
-}
-
 }
 
 .sumirIgualTiro{
@@ -73,5 +69,43 @@ section a{
     transform-origin: right center;
     position: relative;
     top: 8px;
-    background-color:  yellow;
+    background-color: yellow;
+}
+
+.menu-tela-grande {
+    display: none;
+}
+
+@media (min-width: 520px){
+    #hamburguer {
+        display: none;
+    }
+
+   
+.menu-tela-grande {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 16pt;
+    color: limegreen;
+    font-weight: bolder;
+    padding-left: 30px;
+    height: 100vh;
+    width: 100%;
+}
+
+        
+    }
+
+    a{
+        color: limegreen;
+        border-radius: 10px;
+        align-items: center;
+        text-decoration: none;
+    }
+
+
 }
